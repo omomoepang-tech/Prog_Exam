@@ -1,0 +1,27 @@
+
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.mattresssales1;
+
+/**
+ *
+ * @author Student
+ */
+public class ProductCalculationTest {
+    
+    @Test
+    public void GetVat_WithValidData_ReturnsCorrectValue(){
+        //Arrange
+        ProductCalculations calc = new ProductCalculations(3500.0);
+        //Act
+        double actual = calc.GetVat();
+        //Assert of the 15%
+        assertEquals(525.0, actual, 0.001);
+    }
+
+    private void assertEquals(double d, double actual, double d0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+}
